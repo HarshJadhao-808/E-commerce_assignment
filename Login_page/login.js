@@ -18,8 +18,12 @@ function login_data_check_fun() {
 			if (data_array[i].password == login_data_obj.password) {
 				password_status = true;
 				status_flag = true;
+				localStorage.setItem(
+					"username",
+					JSON.stringify(data_array[i].fullname)
+				);
 			}
-		} 
+		}
 	}
 	if (status_flag == true) {
 		alert("Login successful");
@@ -32,4 +36,3 @@ function login_data_check_fun() {
 		alert("login failed");
 	}
 }
-

@@ -10,7 +10,7 @@ function signup_data_fun(){
         password:form.password.value
     }
     signup_data_arr.push(signup_data_obj);
-    console.log(signup_data_arr);
+    // console.log(signup_data_arr);
     localStorage.setItem("signup_data" ,JSON.stringify(signup_data_arr))
     window.location.href = "../Login_page/login.html";    
 }
